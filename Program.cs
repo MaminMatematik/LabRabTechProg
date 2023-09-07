@@ -33,6 +33,7 @@ namespace RepositTest
                 }
                 Console.WriteLine("");
             }
+            Console.WriteLine("Prikol");
             Console.ReadKey();
         }
     }
