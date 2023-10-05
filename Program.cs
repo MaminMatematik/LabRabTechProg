@@ -4,36 +4,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepositTest
+namespace Laba4TechProg
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write length of ZubMass");
-            int allLength = Convert.ToInt32(Console.ReadLine());
-            int[][] ZubMass =new int[allLength][];
-            for(int i=0; i<allLength;i++)
+            int menu1 = 0;
+            while(menu1!=4)
             {
-                Console.WriteLine("Write length of ZubMass "+i);
-                int length= Convert.ToInt32(Console.ReadLine());
-                for (int j=0;j<length;j++)
+                Console.WriteLine("Что вы хотите сделать?");
+                Console.WriteLine("1) Создать легковой автомобиль\n"+
+                    "2) Создать грузовик\n"+
+                    "3) Создать семейный автобус\n");
+                switch (menu1)
                 {
-                    ZubMass[i] = new int[length];
-                    Console.WriteLine("Write element number " + j);
-                    int element= Convert.ToInt32(Console.ReadLine());
-                    ZubMass[i][j] = element;
+                    case 1:
+                        Console.WriteLine("");
+                        Car car = new Car();
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                }
+                }
+            int menu2 = 0;
+            while(menu2!=9)
+            {
+                Console.WriteLine("Что вы хотите сделать?");
+                Console.WriteLine("1)");
+                switch (menu2)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
+                    case 6:
+                        break;
+                    case 7:
+                        break;
+                    case 8:
+                        break;
                 }
             }
-            for (int i=0;i<ZubMass.Length;i++)
-            {
-                for(int j=0;j<ZubMass[i].Length;j++)
-                {
-                    Console.Write(ZubMass[i][j] + "\t");
-                }
-                Console.WriteLine("");
-            }
-            Console.ReadKey();
         }
     }
 }
